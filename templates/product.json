@@ -9,7 +9,7 @@
  */{
   "sections": {
     "main": {
-      "type": "product-information",
+      "type": "product-informations",
       "blocks": {
         "media-gallery": {
           "type": "_product-media-gallery",
