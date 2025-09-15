@@ -1,0 +1,80 @@
+<!-- sections/custom-gallery.liquid -->
+
+<section class="custom-gallery">
+  <div class="page-width">
+    <h2>{{ section.settings.title }}</h2>
+    <div class="gallery-grid">
+      {% for block in section.blocks %}
+        <div class="gallery-item">
+          <img src="{{ block.settings.image | image_url: width: 600 }}" alt="{{ block.settings.alt_text | escape }}">
+          {% if block.settings.caption != blank %}
+            <p class="caption">{{ block.settings.caption }}</p>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<style>
+  .custom-gallery .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  .custom-gallery .gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .custom-gallery .caption {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Custom Gallery",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Gallery Title",
+      "default": "Image Gallery"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Gallery Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "alt_text",
+          "label": "Alt Text"
+        },
+        {
+          "type": "text",
+          "id": "caption",
+          "label": "Caption"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 12,
+  "presets": [
+    {
+      "name": "Custom Gallery",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
