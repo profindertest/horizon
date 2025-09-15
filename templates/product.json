@@ -9,13 +9,13 @@
  */{
   "sections": {
     "main": {
-      "type": "product-informationsss",
+      "type": "product-information",
       "blocks": {
         "media-gallery": {
           "type": "_product-media-gallery",
           "static": true,
           "settings": {
-            "media_presentation": "grid",
+            "media_presentation": "list",
             "media_columns": "two",
             "image_gap": 4,
             "large_first_image": false,
