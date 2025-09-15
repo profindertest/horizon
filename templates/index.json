@@ -282,6 +282,19 @@
     },
     "gallery_XixRzA": {
       "type": "gallery",
+      "blocks": {
+        "image_fehg7Q": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/soap-image-3_3a6e2ed0-3daa-48e5-a1a2-46939bec8caa.png",
+            "alt_text": "test",
+            "caption": "test"
+          }
+        }
+      },
+      "block_order": [
+        "image_fehg7Q"
+      ],
       "name": "Custom Gallery",
       "settings": {
         "title": "Image Gallery"
