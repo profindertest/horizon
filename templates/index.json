@@ -290,10 +290,19 @@
             "alt_text": "test",
             "caption": "test"
           }
+        },
+        "image_7zrJiC": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/soap-image-5_51934cb1-8ef2-44e5-bfe9-a5590acacdb3.png",
+            "alt_text": "test1",
+            "caption": "test1"
+          }
         }
       },
       "block_order": [
-        "image_fehg7Q"
+        "image_fehg7Q",
+        "image_7zrJiC"
       ],
       "name": "Custom Gallery",
       "settings": {
