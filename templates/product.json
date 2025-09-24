@@ -355,7 +355,7 @@
                     "text_yTr6gt": {
                       "type": "text",
                       "settings": {
-                        "text": "<p>Our products are manufactured both locally and globally. We carefully select our manufacturing partners to ensure our products are high quality and a fair value.</p>",
+                        "text": "<p>{{ metaobjects.product_type.test.t_shirt.value }}</p>",
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "left",
