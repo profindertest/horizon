@@ -355,7 +355,7 @@
                     "text_yTr6gt": {
                       "type": "text",
                       "settings": {
-                        "text": "<p>{{ metaobjects.product_type.test.t_shirt.value }}</p>",
+                        "text": "{{ closest.product.metafields.custom.featured | metafield_tag }}",
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "left",
